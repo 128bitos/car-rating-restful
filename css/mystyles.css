@@ -1,0 +1,59 @@
+
+/*
+******************************************************************
+* Author: Khalid Mahmood
+* Assignment: WE4.0 WE4.0 Server-side Web Development, 
+* Date : 2016/07/31
+* Ref: 
+******************************************************************
+*/
+
+
+
+.center {
+    text-align: center;
+    margin: auto;
+    width: 100% ;
+    max-width: 700px;
+   		}
+
+
+.p_center {
+
+	text-align: center;
+    margin: auto;
+		}
+
+
+
+#mypanel, #mypanel2 {
+
+	background-color: #2E2500;
+	text-align: center;
+	
+					}
+
+.right-hand {
+
+	float: right;
+		}
+
+
+@media (min-width: 701px) {
+  #HomePage h6 {
+    display: none;
+  }
+}
+
+
+@media (max-width: 700px) {
+  #HomePage h4 {
+    display: none;
+  }
+
+  #HomePage h6 {
+
+  	font-size: 12px;
+
+  }
+}

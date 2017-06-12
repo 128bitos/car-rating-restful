@@ -1,0 +1,92 @@
+<!--
+******************************************************************
+* Author: Khalid Mahmood
+* Assignment: WE4.0 Mobile Web Applications, 
+* Date : 2016/05/16
+******************************************************************
+-->
+
+
+<!-- document type declaration -->
+<!DOCTYPE html>
+<html lang="en">
+    
+
+  	<!-- Head Tag Started -->
+ 	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	      
+      	<!-- Page Title -->
+      	<title>Ten Best Selling Irish Cars</title>
+		
+	   	<!-- JQuery Mobile CSS-->
+	   	<link rel="stylesheet" href="js/jquery.mobile-1.4.5.min.css" />
+ 		<link rel="stylesheet" href="css/themes/car_app.min.css" />
+		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+ 		
+ 		<!-- Customized CSS-->
+	  	<link rel="stylesheet" href="css/mystyles.css" />	
+	</head>
+	<!-- Head Tag Ended -->
+
+
+
+  	<!-- Body Started -->
+	<body>
+
+		<!-- Home Page Started -->
+		<div data-role="page" id="HomePage" data-theme="a">
+
+			<!-- Side Panel (panel text will insert by function)-->
+			<div data-role="panel" id="mypanel">
+				<a href='' data-rel='close' class='ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left'>Close</a>
+			</div>
+
+	  		
+			<!-- Header Started -->
+	  		<div data-role="header" id="Home_Header" data-theme="a">
+				<a href="#mypanel" class="ui-btn ui-shadow ui-corner-all ui-icon-info ui-btn-icon-notext">info</a>
+				<h4>Top Ten Best Selling Irish Cars in 2015</h4>
+				<h6>Top Ten Best Selling <br> Irish Cars in 2015</h6>
+			</div>
+			<!-- Header Ended -->
+
+			<!-- Content Started -->
+			<div data-role="content">	
+		  		<form class="ui-filterable">
+	      			<input id="carFilter" data-type="search" placeholder="Filter by car name..">
+	     		</form>
+	     		<!--Listview generate dynamically by using data from json file-->
+		  		<ul data-role="listview" data-inset="true" data-filter="true" data-input="#carFilter" id="CarList">
+		  		</ul>
+	    	</div>
+	    	<!-- Content Ended -->
+
+		</div>
+		<!-- Home Page Ended -->
+
+		<!--************************* Jquery Files ********************************-->
+ 			<script src="js/jquery-1.11.1.min.js"></script>
+			
+			<!-- Jquery Mobile file -->
+			<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+			<!-- Javascript File -->
+			<script src="js/MyScript.js"></script>
+
+			<!-- To assign slide transition style as default  Ref: https://api.jquerymobile.com/global-config/ -->
+  			<script type="text/javascript">
+  		 		$(document).on('mobileinit', function(){
+    	 			$.mobile.defaultPageTransition = "slide";
+    	  												});
+  			</script>
+
+
+	</body>
+	<!-- Body Ended -->
+
+</html>
+
+
