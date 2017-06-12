@@ -16,8 +16,8 @@ DATABASE:
 =========
 
 Database Name	: 	web_service_db
-Username	:	app_root
-Password	:	"Digital90"
+Username	:	root
+Password	:	""
 
 
 Additional Information:
